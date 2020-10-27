@@ -1,0 +1,21 @@
+{
+  "name": "@mono/lib",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && tsc -p tsconfig.json",
+    "prewatch":"rm -rf ./dist",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
